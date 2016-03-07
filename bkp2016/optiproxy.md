@@ -66,8 +66,7 @@ do
 end
 ```
 
-At first glance, you might think to try exploiting `exec = "timeout 2 wget -T 2 --page-requisites 
-#{Shellwords.shellescape url}`, but I was unable to find anything online that is able to escape 
+At first glance, you might think to try exploiting `exec = "timeout 2 wget -T 2 --page-requisites #{Shellwords.shellescape url}`, but I was unable to find anything online that is able to escape 
 `Shellwords.shellescape`. I believe it's safe to assume, that's a well written module, with no known 
 exploits, and finding a 0day in it, while possible, is probably outside the scope of the challenge.
 
